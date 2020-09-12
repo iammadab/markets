@@ -1,0 +1,22 @@
+{
+  "name": "markets",
+  "version": "0.0.1",
+  "description": "List bookmaker makerts and methods for extraction",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests --recursive --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iammadab/markets.git"
+  },
+  "author": "Wisdom Ogwu (iammadab)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iammadab/markets/issues"
+  },
+  "homepage": "https://github.com/iammadab/markets#readme",
+  "devDependencies": {
+    "mocha": "^8.1.3"
+  }
+}
