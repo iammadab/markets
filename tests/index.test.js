@@ -23,7 +23,7 @@ describe("Consistency Test", () => {
 					continue
 				}
 
-				if(!providerMap[provider][market]){
+				if(!providerMaps[provider][market]){
 					errors.push(marketNoValue(provider, market))
 					continue
 				}
