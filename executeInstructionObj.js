@@ -1,4 +1,10 @@
-const makeExecuteInstructionObj = executeInstruction => (instructionObj, providerData) => {
+const executeInstructionFn = require("./executeInstruction")
+
+const makeExecuteInstructionObj = (
+	
+	executeInstruction = executeInstructionFn
+	
+) => (instructionObj, providerData) => {
 
 	const compressedMarketValues = {} 
 

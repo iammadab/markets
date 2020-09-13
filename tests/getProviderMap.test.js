@@ -40,7 +40,7 @@ describe("Provider Map", () => {
 
 	it("should return an empty object is the maps passed is invalid", () => {
 	
-		const getProviderMap = makeGetProviderMap()
+		const getProviderMap = makeGetProviderMap("invalid_maps")
 		assert.deepEqual(getProviderMap("p1"), {})
 
 	})

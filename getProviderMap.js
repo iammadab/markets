@@ -1,4 +1,8 @@
-const makeGetProviderMap = maps => provider => {
+const makeGetProviderMap = (
+	
+	maps = { "p1": { "a:b": ["a"] }}
+	
+) => provider => {
 
 	if(!maps)
 		return {}

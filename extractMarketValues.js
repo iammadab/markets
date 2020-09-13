@@ -1,10 +1,14 @@
+const generateInstructionObjFn = require("./generateInstructionObj")
+const makeExecuteInstructionObj = require("./executeInstructionObj")
+const expandMarketValuesFn = require("./expandMarketValues")
+
 const makeExtractMarketValues = (
 	
-	generateInstructionObj,
+	generateInstructionObj = generateInstructionObjFn,
 	
-	executeInstructionObj,
+	executeInstructionObj = makeExecuteInstructionObj(),
 
-	expandMarketValues
+	expandMarketValues = expandMarketValuesFn
 	
 ) => (markets, providerMap, providerData) => {
 	

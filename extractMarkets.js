@@ -1,10 +1,14 @@
+const makeGetMarkets = require("./getMarkets")
+const makeGetProviderMap = require("./getProviderMap")
+const makeExtractMarketValues = require("./extractMarketValues")
+
 const makeFetchMarkets = (
 	
-	getMarkets, 
+	getMarkets = makeGetMarkets(), 
 	
-	getProviderMap,
+	getProviderMap = makeGetProviderMap(),
 
-	extractMarketValues
+	extractMarketValues = makeExtractMarketValues()
 
 ) => ( provider, providerData ) => {
 	
