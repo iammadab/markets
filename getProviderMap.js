@@ -1,6 +1,8 @@
+const providerMaps = require("./providers")
+
 const makeGetProviderMap = (
 	
-	maps = { "p1": { "a:b": ["a"] }}
+	maps = providerMaps 
 	
 ) => provider => {
 
