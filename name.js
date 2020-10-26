@@ -146,7 +146,5 @@ const name = {
 
 	// "44": "4:4",
 
-	// "Other": "Other",
-
-
+	"Other": "Other"
 }
