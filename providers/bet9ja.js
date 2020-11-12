@@ -30,7 +30,7 @@ const groups = {
 
 	"O5.5": groupAt(17),
 
-	"FG": groupAt(43),
+	"FG": groupAt(30),
 
 	"HO0.5": groupAt(120),
 
