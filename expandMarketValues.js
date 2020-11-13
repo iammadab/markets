@@ -3,19 +3,21 @@
 
 const nameMap = require("./name")
 
+
+const getName = (...values) => {
+	return values.map(val => nameMap[val] || val)
+}
+
 const expandMarketValues = compressedMarket => {
 	
 	const expandedValues = {}
 
 	Object.keys(compressedMarket).forEach(key => {
 	
-		const [ marketGroup, marketOutcome ] = key.split(":")
+		let [ marketGroup, marketOutcome ] = getName(...key.split(":"))
 
 		if(!expandedValues[marketGroup])
 			expandedValues[marketGroup] = {}
-
-		marketGroup = nameMap[marketGroup] || marketGroup
-		marketOutcome = nameMap[marketOutcome] || marketOutcome
 
 		expandedValues[marketGroup][marketOutcome] = compressedMarket[key]
 

@@ -128,3 +128,5 @@ const name = {
 
 	"Other": "Other"
 }
+
+module.exports = name
