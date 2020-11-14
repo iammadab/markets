@@ -9,7 +9,7 @@ const outcomeAt =
 
 const groups = {
 	
-	"DNB": groupAt("Both Teams Score 2+")
+	"DNB": groupAt("Draw No Bet")
 
 }
 
