@@ -18,6 +18,8 @@ const moutcomeAt =
 const groups = {
 
 	"1X2": mgroupAt("1X2"),
+
+	"DC": mgroupAt("Double chance"),
 	
 	"DNB": groupAt("Draw No Bet"),
 
@@ -29,7 +31,7 @@ const groups = {
 
 	"O1.5": groupAt("Over/Under (1.5)"),
 
-	"O2.5": groupAt("Over/Under (2.5)"),
+	"O2.5": mgroupAt("Over/Under (2.5)"),
 
 	"O3.5": groupAt("Over/Under (3.5)"),
 
@@ -59,6 +61,12 @@ const map = {
 	"1X2:X": moutcomeAt("1X2", 1),
 
 	"1X2:2": moutcomeAt("1X2", 2),
+
+	"DC:1X": moutcomeAt("DC", 0),
+
+	"DC:12": moutcomeAt("DC", 1),
+
+	"DC:X2": moutcomeAt("DC", 2),
 
 	"DNB:1": outcomeAt("DNB", 0),
 
