@@ -1,6 +1,6 @@
 const groupAt = 
-	groupIndex => 
-		[ "ClassiQuotaList", groupIndex, "QuoteList" ]
+	groupName => 
+		[ "ClassiQuotaList", `sarr:${groupName}:ClasseQuota`, "QuoteList" ]
 
 const outcomeAt = 
 	(group, outcomeIndex) => 
@@ -8,11 +8,11 @@ const outcomeAt =
 
 const groups = {
 	
-	"1X2": groupAt(0),
+	"1X2": groupAt("1X2"),
 
 	"DC": groupAt(1),
 
-	"DNB": groupAt(4),
+	"DNB": groupAt("DNB"),
 
 	"GG": groupAt(3),
 
