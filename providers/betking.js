@@ -8,7 +8,7 @@ const outcomeAt =
 
 
 const groups = {
-	
+
 	"DNB": groupAt("Draw No Bet")
 
 }
