@@ -1,10 +1,10 @@
 const groupAt = 
 	groupName =>
-		[ "AM", 0, "IT", 0, "OC", `sarr:${groupName}:OT:ON` ]
+		[ "match", "AM", 0, "IT", 0, "OC", `sarr:${groupName}:OT:ON` ]
 
 const outcomeAt =
 	(group, outcomeIndex) => 
-		[ ...groups[group], "MO", outcomeIndex, "OT", "OO"]
+		[ ...groups[group], "MO", outcomeIndex, "OT", "OO" ]
 
 
 const groups = {
