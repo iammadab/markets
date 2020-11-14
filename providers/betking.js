@@ -6,8 +6,18 @@ const outcomeAt =
 	(group, outcomeIndex) => 
 		[ ...groups[group], "MO", outcomeIndex, "OT", "OO" ]
 
+const mgroupAt =
+	groupName =>
+		[ "league", "OddsCollection", `sarr:${groupName}:OddsType:OddsTypeName` ]
+
+const moutcomeAt =
+	(group, outcomeIndex) =>
+		[ ...groups[group], "MatchOdds", outcomeIndex, "Outcome", "OddOutcome" ]
+
 
 const groups = {
+
+	"1X2": mgroupAt("1X2"),
 	
 	"DNB": groupAt("Draw No Bet"),
 
@@ -44,9 +54,12 @@ const groups = {
 }
 
 const map = {
+	"1X2:1" moutcomeAt("1X2", 0),
 
-	"1X2:1": [ "league", "OddsCollection", 0, "MatchOdds", 0, "Outcome", "OddOutcome" ],
-	
+	"1X2:X": moutcomeAt("1X2", 1),
+
+	"1X2:2": moutcomeAt("1X2", 2),
+
 	"DNB:1": outcomeAt("DNB", 0),
 
 	"DNB:2": outcomeAt("DNB", 1),
