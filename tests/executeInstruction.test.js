@@ -23,6 +23,9 @@ describe("Execute Instruction", () => {
 				m: [ 
 					{ name: "1" },
 					{ name: "2" }
+				],
+				n: [
+					{ a: { b: { name: "1", deep: true } } }
 				]
 			}
 		}
@@ -117,13 +120,13 @@ describe("Execute Instruction", () => {
 
 	it("should be able to search an array based on property match equality", () => {
 
-		args.marketInstruction = [ "m", "sarr:name:1" ]
+		args.marketInstruction = [ "m", "sarr:1:name" ]
 		assert.deepEqual(
 			executeInstruction(...Object.values(args)),
 			{ name: "1" }
 		)
 
-		args.marketInstruction = [ "m", "sarr:name:2" ]
+		args.marketInstruction = [ "m", "sarr:2:name" ]
 		assert.deepEqual(
 			executeInstruction(...Object.values(args)),
 			{ name: "2" }
@@ -131,9 +134,25 @@ describe("Execute Instruction", () => {
 
 	})
 
+	it("should allow array searching with more than one props", () => {
+	
+		args.marketInstruction = [ "n", "sarr:1:a:b:name" ]
+		assert.deepEqual(
+			executeInstruction(...Object.values(args)),
+			{ a: { b: { name: "1", deep: true }}}
+		)
+
+	})
+
 	it("should return '-' if array search doesn't find anything", () => {
 	
-		args.marketInstruction = [ "m", "sarr:name:5" ]
+		args.marketInstruction = [ "m", "sarr:5:name" ]
+		assert.strictEqual(
+			executeInstruction(...Object.values(args)),
+			"-"
+		)
+
+		args.marketInstruction = [ "n", "sarr:1:a:c:name" ]
 		assert.strictEqual(
 			executeInstruction(...Object.values(args)),
 			"-"
