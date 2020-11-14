@@ -15,7 +15,7 @@ const executeInstruction = (instruction, data) => {
 		if(!result)
 			break
 
-		if(prop.startsWith("sarr")){
+		if(String(prop).startsWith("sarr")){
 			let [ ignore, value, ...propertyNames ] = prop.split(":")
 
 			let found = false
