@@ -15,7 +15,25 @@ const executeInstruction = (instruction, data) => {
 		if(!result)
 			break
 
-		result = result[prop]
+		if(prop.startsWith("sarr")){
+			let [ ignore, propertyName, value ] = prop.split(":")
+
+			let found = false
+
+			// What if result is not an array
+			for(let i = 0; i < result.length; i++){
+				if(result[i][propertyName] == value){
+					result = result[i]
+					found = true
+					break
+				}
+			}
+
+			if(!found) result = null
+		}
+
+		else
+			result = result[prop]
 
 	}
 	

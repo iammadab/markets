@@ -19,7 +19,11 @@ describe("Execute Instruction", () => {
 					e: {
 						f: "deep"
 					}
-				}
+				},
+				m: [ 
+					{ name: "1" },
+					{ name: "2" }
+				]
 			}
 		}
 
@@ -110,5 +114,31 @@ describe("Execute Instruction", () => {
 		)
 	
 	})	
+
+	it("should be able to search an array based on property match equality", () => {
+
+		args.marketInstruction = [ "m", "sarr:name:1" ]
+		assert.deepEqual(
+			executeInstruction(...Object.values(args)),
+			{ name: "1" }
+		)
+
+		args.marketInstruction = [ "m", "sarr:name:2" ]
+		assert.deepEqual(
+			executeInstruction(...Object.values(args)),
+			{ name: "2" }
+		)
+
+	})
+
+	it("should return '-' if array search doesn't find anything", () => {
+	
+		args.marketInstruction = [ "m", "sarr:name:5" ]
+		assert.strictEqual(
+			executeInstruction(...Object.values(args)),
+			"-"
+		)
+
+	})
 
 })	
