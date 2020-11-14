@@ -54,7 +54,7 @@ const groups = {
 }
 
 const map = {
-	"1X2:1" moutcomeAt("1X2", 0),
+	"1X2:1": moutcomeAt("1X2", 0),
 
 	"1X2:X": moutcomeAt("1X2", 1),
 
