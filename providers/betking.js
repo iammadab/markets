@@ -89,9 +89,9 @@ const map = {
 
 	"O1.5:NO": outcomeAt("O1.5", 1),
 
-	"O2.5:YES": outcomeAt("O2.5", 0),
+	"O2.5:YES": moutcomeAt("O2.5", 0),
 
-	"O2.5:NO": outcomeAt("O2.5", 1),
+	"O2.5:NO": moutcomeAt("O2.5", 1),
 
 	"O3.5:YES": outcomeAt("O3.5", 0),
 
