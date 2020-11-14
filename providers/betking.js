@@ -1,6 +1,6 @@
 const groupAt = 
-	groupIndex =>
-		[ "AM", 0, "IT", 0, "OC", groupIndex ]
+	groupName =>
+		[ "AM", 0, "IT", 0, "OC", `sarr:${groupName}:OT:ON` ]
 
 const outcomeAt =
 	(group, outcomeIndex) => 
@@ -9,7 +9,7 @@ const outcomeAt =
 
 const groups = {
 	
-	"DNB": groupAt(22)
+	"DNB": groupAt("Both Teams Score 2+")
 
 }
 
