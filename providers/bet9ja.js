@@ -28,7 +28,7 @@ const groups = {
 
 	"O4.5": groupAt("O/U 4.5"),
 
-	"O5.5": groupAt("O/U 5.5"),
+	"O5.5": groupAt("O / U 5.5"),
 
 	"FG": groupAt("First Goal"),
 

@@ -31,7 +31,7 @@ const executeInstruction = (instruction, data) => {
 				}
 
 
-				if(node == value){
+				if(String(node).trim() == String(value).trim()){
 					result = result[i]
 					found = true
 					break
