@@ -10,11 +10,11 @@ const name = {
 
 	"DC":"Double Chance",
 
-	"1X":"Home Win or Draw",
+	"1X":"Home or Draw",
 
-	"X2":"Away Win or Draw",
+	"X2":"Away or Draw",
 
-	"12":"Home or Away Win",
+	"12":"Home or Away",
 
 	"DNB":"Draw No Bet",
 

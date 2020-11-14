@@ -10,33 +10,33 @@ const groups = {
 	
 	"1X2": groupAt("1X2"),
 
-	"DC": groupAt(1),
+	"DC": groupAt("Double Chance"),
 
 	"DNB": groupAt("DNB"),
 
-	"GG": groupAt(3),
+	"GG": groupAt("GG/NG"),
 
-	"GGO2.5": groupAt(161),
+	"GGO2.5": groupAt("GG/NG & O/U 2,5"),
 
-	"O0.5": groupAt(11),
+	"O0.5": groupAt("O/U 0.5"),
 
-	"O1.5": groupAt(12),
+	"O1.5": groupAt("O/U 1.5"),
 
-	"O2.5": groupAt(2),
+	"O2.5": groupAt("O/U 2.5"),
 
-	"O3.5": groupAt(14),
+	"O3.5": groupAt("O/U 3.5"),
 
-	"O4.5": groupAt(15),
+	"O4.5": groupAt("O/U 4.5"),
 
-	"O5.5": groupAt(17),
+	"O5.5": groupAt("O/U 5.5"),
 
-	"FG": groupAt(36),
+	"FG": groupAt("First Goal"),
 
-	"HO0.5": groupAt(121),
+	"HO0.5": groupAt("H/A O/U 0.5"),
 
-	"HO1.5": groupAt(122),
+	"HO1.5": groupAt("H/A O/U 1.5"),
 
-	"HO2.5": groupAt(123)
+	"HO2.5": groupAt("H/A O/U 2.5")
 }
 
 
