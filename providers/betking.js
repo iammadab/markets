@@ -44,6 +44,8 @@ const groups = {
 }
 
 const map = {
+
+	"1X2:1": [ "league", "OddsCollection", 0, "MatchOdds", 0, "Outcome", "OutcomeID" ],
 	
 	"DNB:1": outcomeAt("DNB", 0),
 
