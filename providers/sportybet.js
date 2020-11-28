@@ -4,7 +4,7 @@ const groupAt =
 
 const mgroupAt =
 	(groupName, specifier) => 
-		[ "data", "markets", `filter:${groupName}:name`, `sarr:${specifier}:specifier` ]
+		[ "data", "markets", `farr:${groupName}:name`, `sarr:${specifier}:specifier` ]
 
 const outcomeAt = 
 	(group, outcomeName) =>
