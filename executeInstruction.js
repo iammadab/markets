@@ -15,7 +15,11 @@ const executeInstruction = (instruction, data) => {
 		if(!result)
 			break
 
-		if(String(prop).startsWith("sarr")){
+		if(String(prop).toLowerCase() == "values")
+			result = Object.values(result)
+
+		// Search for a single element in an array
+		else if(String(prop).startsWith("sarr")){
 			let [ ignore, value, ...propertyNames ] = prop.split(":")
 
 			let found = false
@@ -39,6 +43,53 @@ const executeInstruction = (instruction, data) => {
 			}
 
 			if(!found) result = null
+		}
+	
+
+		// Filter an array, usually returns an array
+		else if(String(prop).startsWith("farr")){
+			let [ ignore, value, ...propertyNames ] = prop.split(":")
+
+			let elements = []
+
+			for(let i = 0; i < result.length; i++){
+	
+				let node = result[i]
+
+				for(a of propertyNames){
+					node = node[a]
+					if(!node) break
+				}
+
+				if(String(node).trim() == String(value).trim())
+					elements.push(result[i])
+
+			}
+
+			result = elements
+		}
+
+		else if(String(prop).startsWith("pick")){
+	
+			let [ ignore, ...propertyNames ] = prop.split(":")
+
+			let elements = []
+
+			for(let i = 0; i < result.length; i++){
+	
+				let node = result[i]
+
+				for(a of propertyNames){
+					node = node[a]
+					if(!node) break
+				}
+
+				elements.push(node)
+
+			}
+
+			result = elements
+
 		}
 
 		else
@@ -79,4 +130,3 @@ function isObject(value){
 
 	return true
 
-}

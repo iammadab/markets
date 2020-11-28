@@ -126,6 +126,4 @@ const map = {
 
 }
 
-console.log(map)
-
 module.exports = map
