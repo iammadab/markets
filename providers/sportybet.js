@@ -20,7 +20,7 @@ const groups = {
 
 	"GG": groupAt("GG/NG"),
 
-	"GGO2.5": mgroupAt("Over/Under & GG/NG", "total=2.5"),
+	"GGO2.5": mgroupAt("O/U & GG/NG", "total=2.5"),
 
 	"O0.5": mgroupAt("Over/Under", "total=0.5"),
 
@@ -34,19 +34,19 @@ const groups = {
 
 	"O5.5": mgroupAt("Over/Under", "total=5.5"),
 
-	"FG": mgroupAt("1st Goal", "goalnr=1"),
+	"FG": mgroupAt("Next Goal", "goalnr=1"),
 
-	"HO0.5": mgroupAt("Home Team Over/Under", "total=0.5"),
+	"HO0.5": mgroupAt("Home Team Total", "total=0.5"),
 
-	"HO1.5": mgroupAt("Home Team Over/Under", "total=1.5"),
+	"HO1.5": mgroupAt("Home Team Total", "total=1.5"),
 
-	"HO2.5": mgroupAt("Home Team Over/Under", "total=2.5"),
+	"HO2.5": mgroupAt("Home Team Total", "total=2.5"),
 
-	"AO0.5": mgroupAt("Away Team Over/Under", "total=0.5"),
+	"AO0.5": mgroupAt("Away Team Total", "total=0.5"),
 
-	"AO1.5": mgroupAt("Away Team Over/Under", "total=1.5"),
+	"AO1.5": mgroupAt("Away Team Total", "total=1.5"),
 
-	"AO2.5": mgroupAt("Away Team Over/Under", "total=2.5")
+	"AO2.5": mgroupAt("Away Team Total", "total=2.5")
 
 }
 
