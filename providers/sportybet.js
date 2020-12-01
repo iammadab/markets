@@ -80,25 +80,25 @@ const map = {
 
 	"O0.5:NO": outcomeAt("O0.5", "Under 0.5"),
 
-	"O1.5:YES": outcomeAt("O1.5", "Over 0.5"),
+	"O1.5:YES": outcomeAt("O1.5", "Over 1.5"),
 
-	"O1.5:NO": outcomeAt("O1.5", "Under 0.5"),
+	"O1.5:NO": outcomeAt("O1.5", "Under 1.5"),
 
-	"O2.5:YES": outcomeAt("O2.5", "Over 0.5"),
+	"O2.5:YES": outcomeAt("O2.5", "Over 2.5"),
 
-	"O2.5:NO": outcomeAt("O2.5", "Under 0.5"),
+	"O2.5:NO": outcomeAt("O2.5", "Under 2.5"),
 
-	"O3.5:YES": outcomeAt("O3.5", "Over 0.5"),
+	"O3.5:YES": outcomeAt("O3.5", "Over 3.5"),
 
-	"O3.5:NO": outcomeAt("O3.5", "Under 0.5"),
+	"O3.5:NO": outcomeAt("O3.5", "Under 3.5"),
 
-	"O4.5:YES": outcomeAt("O4.5", "Over 0.5"),
+	"O4.5:YES": outcomeAt("O4.5", "Over 4.5"),
 
-	"O4.5:NO": outcomeAt("O4.5", "Under 0.5"),
+	"O4.5:NO": outcomeAt("O4.5", "Under 4.5"),
 
-	"O5.5:YES": outcomeAt("O5.5", "Over 0.5"),
+	"O5.5:YES": outcomeAt("O5.5", "Over 5.5"),
 
-	"O5.5:NO": outcomeAt("O5.5", "Under 0.5"),
+	"O5.5:NO": outcomeAt("O5.5", "Under 5.5"),
 
 	"FG:1": outcomeAt("FG", "Home"),
 
